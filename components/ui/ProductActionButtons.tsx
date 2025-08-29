@@ -30,12 +30,12 @@ export default function ProductActionButtons({ product }: ProductActionButtonsPr
 
   const handleWhatsApp = () => {
     const message = `Hi! I'm interested in the ${product.name} priced at $${product.price}. Can you tell me more about it?`;
-    const whatsappUrl = `https://wa.me/1234567890?text=${encodeURIComponent(message)}`; // Replace with your number
+    const whatsappUrl = `https://wa.me/201155482312?text=${encodeURIComponent(message)}`; // Replace with your number
     window.open(whatsappUrl, '_blank');
   };
 
   const handleCall = () => {
-    window.location.href = 'tel:+1234567890'; // Replace with your number
+    window.location.href = 'tel:+201155482312'; // Replace with your number
   };
 
   return (

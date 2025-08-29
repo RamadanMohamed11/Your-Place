@@ -297,14 +297,14 @@ export default function ServicesPage() {
               </h3>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="tel:+1234567890"
+                  href="tel:+201155482312"
                   className="flex items-center justify-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
                 >
                   <Phone className="h-5 w-5 mr-2" />
                   Call: (234) 567-890
                 </a>
                 <a
-                  href="https://wa.me/1234567890"
+                  href="https://wa.me/201155482312"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"

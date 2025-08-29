@@ -47,50 +47,52 @@ export default function Header() {
           </Link>
 
           {/* Centered Navigation and Search */}
-          <div className="hidden md:flex flex-1 items-center justify-center space-x-8">
-            <nav className="flex items-center space-x-8">
-              <Link href="/" className="text-gray-300 hover:text-blue-400 font-medium transition-all duration-300 hover:scale-105">
-                {t('nav.home')}
-              </Link>
-              <Link href="/products" className="text-gray-300 hover:text-blue-400 font-medium transition-all duration-300 hover:scale-105">
-                {t('nav.products')}
-              </Link>
-              <Link href="/services" className="text-gray-300 hover:text-blue-400 font-medium transition-all duration-300 hover:scale-105">
-                {t('nav.services')}
-              </Link>
-              <Link href="/contact" className="text-gray-300 hover:text-blue-400 font-medium transition-all duration-300 hover:scale-105">
-                {t('nav.contact')}
-              </Link>
-            </nav>
-            <div className="relative">
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder={t('nav.search') || 'Search...'}
-                className={`w-64 px-4 py-2 ${isRTL ? 'pr-10' : 'pl-10'} bg-gray-800 border border-gray-700 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300`}
-              />
-              <Search className={`absolute ${isRTL ? 'right-3' : 'left-3'} top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-500`} />
+          <div className="hidden md:flex flex-1 items-center justify-center">
+            <div className="flex items-center gap-x-12">
+              <nav className="flex items-center gap-x-8">
+                <Link href="/" className="text-gray-300 hover:text-blue-400 font-medium transition-all duration-300 hover:scale-105">
+                  {t('nav.home')}
+                </Link>
+                <Link href="/products" className="text-gray-300 hover:text-blue-400 font-medium transition-all duration-300 hover:scale-105">
+                  {t('nav.products')}
+                </Link>
+                <Link href="/services" className="text-gray-300 hover:text-blue-400 font-medium transition-all duration-300 hover:scale-105">
+                  {t('nav.services')}
+                </Link>
+                <Link href="/contact" className="text-gray-300 hover:text-blue-400 font-medium transition-all duration-300 hover:scale-105">
+                  {t('nav.contact')}
+                </Link>
+              </nav>
+              <div className="relative">
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder={t('nav.search') || 'Search...'}
+                  className={`w-64 px-4 py-2 ${isRTL ? 'pr-10' : 'pl-10'} bg-gray-800 border border-gray-700 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300`}
+                />
+                <Search className={`absolute ${isRTL ? 'right-3' : 'left-3'} top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-500`} />
+              </div>
             </div>
           </div>
 
           {/* Contact Buttons */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-6">
             <a
-              href="tel:+1234567890"
+              href="tel:+01155482312"
               className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all duration-300 hover:scale-105 hover:shadow-lg"
             >
-              <Phone className={`h-4 w-4 ${isRTL ? 'ml-2' : 'mr-2'}`} />
-              <span>{t('contact.call')}</span>
+              <Phone className={`h-4 w-4`} />
+              <span className={`${isRTL ? 'mr-2' : 'ml-2'}`}>{t('contact.call')}</span>
             </a>
             <a
-              href="https://wa.me/1234567890"
+              href="https://wa.me/201155482312"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-all duration-300 hover:scale-105 hover:shadow-lg"
             >
-              <MessageCircle className={`h-4 w-4 ${isRTL ? 'ml-2' : 'mr-2'}`} />
-              <span>{t('contact.whatsapp')}</span>
+              <MessageCircle className={`h-4 w-4`} />
+              <span className={`${isRTL ? 'mr-2' : 'ml-2'}`}>{t('contact.whatsapp')}</span>
             </a>
           </div>
 
@@ -125,22 +127,22 @@ export default function Header() {
             <Link href="/products" className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">{t('nav.products')}</Link>
             <Link href="/services" className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">{t('nav.services')}</Link>
             <Link href="/contact" className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">{t('nav.contact')}</Link>
-            <div className="flex justify-center space-x-4 pt-4">
+            <div className="flex justify-center space-x-6 pt-4">
               <a
-                href="tel:+1234567890"
+                href="tel:+01155482312"
                 className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
               >
-                <Phone className={`h-4 w-4 ${isRTL ? 'ml-2' : 'mr-2'}`} />
-                <span>{t('contact.call')}</span>
+                <Phone className={`h-4 w-4`} />
+                <span className={`${isRTL ? 'mr-2' : 'ml-2'}`}>{t('contact.call')}</span>
               </a>
               <a
-                href="https://wa.me/1234567890"
+                href="https://wa.me/201155482312"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700"
               >
-                <MessageCircle className={`h-4 w-4 ${isRTL ? 'ml-2' : 'mr-2'}`} />
-                <span>{t('contact.whatsapp')}</span>
+                <MessageCircle className={`h-4 w-4`} />
+                <span className={`${isRTL ? 'mr-2' : 'ml-2'}`}>{t('contact.whatsapp')}</span>
               </a>
             </div>
           </div>

@@ -23,11 +23,11 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="tel:+1234567890"
+                href="tel:+201155482312"
                 className="flex items-center space-x-2 text-blue-400 hover:text-blue-300 transition-all duration-300 hover:scale-105"
               >
                 <Phone className="h-4 w-4" />
-                <span>+1 (234) 567-890</span>
+                <span>+201155482312</span>
               </a>
             </div>
           </div>
@@ -83,7 +83,7 @@ export default function Footer() {
                 <span className="text-gray-300">info@makanak.com</span>
               </div>
               <a
-                href="https://wa.me/1234567890"
+                href="https://wa.me/201155482312"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-3 text-green-400 hover:text-green-300 transition-all duration-300 hover:scale-105"

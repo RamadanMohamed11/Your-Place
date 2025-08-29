@@ -74,7 +74,7 @@ export const translations: { [key: string]: Translation } = {
     },
     features: {
       qualityTitle: 'جودة مضمونة',
-      qualityDesc: 'جميع المنتجات تأتي مع ضمان وضمان الجودة',
+      qualityDesc: 'جميع المنتجات مضمونة الجودة',
       expertTitle: 'إصلاحات خبيرة',
       expertDesc: 'فنيون محترفون بسنوات من الخبرة',
       fastTitle: 'خدمة سريعة',

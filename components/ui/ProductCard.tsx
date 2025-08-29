@@ -65,7 +65,7 @@ export default function ProductCard({ product }: ProductCardProps) {
               View Details
             </Link>
             <a
-              href={`https://wa.me/1234567890?text=Hi! I'm interested in ${encodeURIComponent(product.name)} priced at $${product.price}`}
+              href={`https://wa.me/201155482312?text=Hi! I'm interested in ${encodeURIComponent(product.name)} priced at $${product.price}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center px-3 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
