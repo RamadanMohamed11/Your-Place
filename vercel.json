@@ -3,11 +3,5 @@
     "app/api/**/*.ts": {
       "maxDuration": 30
     }
-  },
-  "env": {
-    "MONGODB_URI": "@mongodb_uri",
-    "JWT_SECRET": "@jwt_secret",
-    "DEFAULT_ADMIN_USERNAME": "@default_admin_username",
-    "DEFAULT_ADMIN_PASSWORD": "@default_admin_password"
   }
 }

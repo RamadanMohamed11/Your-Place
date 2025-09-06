@@ -34,12 +34,19 @@ vercel
 ```
 
 ### 4. Set Environment Variables in Vercel Dashboard
-After deployment, go to your Vercel project dashboard and add these environment variables:
+After deployment, go to your Vercel project dashboard:
 
-- `MONGODB_URI`: Your MongoDB Atlas connection string
-- `JWT_SECRET`: A random secret key for JWT tokens
-- `DEFAULT_ADMIN_USERNAME`: Admin username (e.g., "admin")
-- `DEFAULT_ADMIN_PASSWORD`: Admin password (e.g., "admin123")
+1. Go to your project → **Settings** → **Environment Variables**
+2. Add these environment variables (click "Add New"):
+
+| Name | Value | Environment |
+|------|-------|-------------|
+| `MONGODB_URI` | `mongodb+srv://username:password@cluster.mongodb.net/database?retryWrites=true&w=majority` | Production, Preview, Development |
+| `JWT_SECRET` | `your-super-secret-jwt-key-here` | Production, Preview, Development |
+| `DEFAULT_ADMIN_USERNAME` | `admin` | Production, Preview, Development |
+| `DEFAULT_ADMIN_PASSWORD` | `admin123` | Production, Preview, Development |
+
+**Important:** Replace the MongoDB URI with your actual connection string from MongoDB Atlas.
 
 ### 5. Redeploy
 After adding environment variables, redeploy:
