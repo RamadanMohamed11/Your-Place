@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { initializeDatabase, runQuery } from '@/lib/database';
+import connectDB, { RepairRequest } from '@/lib/database';
 
 export async function POST(request: NextRequest) {
   try {
-    await initializeDatabase();
+    await connectDB();
     
     const { name, phone, deviceModel, problemDescription } = await request.json();
 
@@ -14,14 +14,19 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const result = await runQuery(
-      'INSERT INTO repair_requests (customer_name, phone, device_model, problem_description) VALUES (?, ?, ?, ?)',
-      [name, phone, deviceModel, problemDescription]
-    );
+    const repairRequest = new RepairRequest({
+      customer_name: name,
+      phone: phone,
+      device_model: deviceModel,
+      problem_description: problemDescription,
+      status: 'pending'
+    });
+
+    const result = await repairRequest.save();
 
     return NextResponse.json({
       message: 'Repair request submitted successfully',
-      id: result.id
+      id: result._id
     }, { status: 201 });
 
   } catch (error) {
