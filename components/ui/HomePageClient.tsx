@@ -46,18 +46,6 @@ export default function HomePageClient({ featuredProducts }: { featuredProducts:
       <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-purple-800 text-white overflow-hidden">
         <div className="absolute inset-0 bg-black bg-opacity-30" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent" />
-        
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <Image
-            src="/Your_place.jpg"
-            alt="Your Place - Mobile Shop"
-            fill
-            className="object-cover opacity-20"
-            priority
-          />
-        </div>
-        
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 animate-fade-in-up">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-slide-in-left">

@@ -40,6 +40,16 @@ export const translations: { [key: string]: Translation } = {
       call: 'Call',
       whatsapp: 'WhatsApp Us',
       phone: 'Phone',
+      contactUs: 'Contact Us',
+      location: 'Location',
+      workingHours: 'Working Hours',
+      ourServices: 'Our Services',
+      weAreHere: 'We are here to serve you 24/7',
+      clickToCall: 'Click to call',
+      clickToWhatsapp: 'Click to chat on WhatsApp',
+      viewOnMap: 'View on Map',
+      saturday: 'Saturday - Thursday',
+      friday: 'Friday',
       preferContact: 'Prefer to contact us directly?'
     },
     footer: {
@@ -96,6 +106,16 @@ export const translations: { [key: string]: Translation } = {
       call: 'اتصل',
       whatsapp: 'واتساب',
       phone: 'الهاتف',
+      contactUs: 'اتصل بنا',
+      location: 'الموقع',
+      workingHours: 'ساعات العمل',
+      ourServices: 'خدماتنا',
+      weAreHere: 'نحن هنا لخدمتك على مدار الساعة',
+      clickToCall: 'اضغط للاتصال',
+      clickToWhatsapp: 'اضغط للدردشة على واتساب',
+      viewOnMap: 'عرض على الخريطة',
+      saturday: 'السبت - الخميس',
+      friday: 'الجمعة',
       preferContact: 'تفضل التواصل معنا مباشرة؟'
     },
     footer: {
