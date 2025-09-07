@@ -82,7 +82,9 @@ export default function ContactPage() {
             <div className="p-4 md:p-6 bg-gray-700 rounded-lg border border-gray-600 flex-1 flex items-center justify-center">
               <div className="w-full">
                 <p className="text-xs md:text-sm text-gray-400 mb-1 text-center">كل أيام الأسبوع</p>
-                <p className="text-sm md:text-lg font-semibold text-purple-400 whitespace-nowrap">3:00 PM - 11:00 PM</p>
+                <div dir="ltr">
+                  <p className="text-sm md:text-lg font-semibold text-purple-400">3:00 PM - 11:00 PM</p>
+                </div>
               </div>
             </div>
           </div>
